@@ -8,6 +8,6 @@ You do this by adding the following hook to your `.pre-commit-config.yaml` file 
  - repo: https://github.com/WilliamDeKeyzer/govulncheck-precommit
    hooks:
       - id: govulncheck
-        rev: xxx
+        rev: v1.0.0
         always_run: true
 ```
