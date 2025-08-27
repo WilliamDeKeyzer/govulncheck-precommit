@@ -3,13 +3,15 @@ from __future__ import annotations
 import subprocess
 
 def main() -> int:
+    print("Invoking the subprocess...")
     result = subprocess.run(['govulncheck', './...'], stdout=subprocess.PIPE, check=True)
 
     data = result.stdout
     result = result.returncode
 
-    print("ExitCode : ", result)
-    print("Output.  : ", data.decode('utf-8'))
+    if result != 0:
+        print("Vulnerabilities found!")
+        print(data.decode('utf-8'))
 
     return result
 
