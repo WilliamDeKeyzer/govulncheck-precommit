@@ -5,3 +5,4 @@
   language: python
   types: [python]
   stages: [pre-commit, pre-merge-commit, manual]
+  pass_filenames: true

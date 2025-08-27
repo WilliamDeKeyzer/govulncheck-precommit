@@ -3,7 +3,7 @@ from __future__ import annotations
 import subprocess
 
 def main() -> int:
-    result = subprocess.run(['govulncheck', './...'], stdout=subprocess.PIPE, check=True)
+    result = subprocess.run(['govulncheck', './...'], stdout=subprocess.PIPE, check=True, text=True)
 
     data = result.stdout
     result = result.returncode
