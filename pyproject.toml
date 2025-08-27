@@ -1,0 +1,10 @@
+[project]
+name = "P11005-IPC-Go-Templates"
+version = "2025.08.26"
+dependencies = []
+
+[project.scripts]
+govulncheck = "customhooks.govulncheck:main"
+
+[tool.setuptools]
+py-modules = []

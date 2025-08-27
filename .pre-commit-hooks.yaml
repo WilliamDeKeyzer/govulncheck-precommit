@@ -1,0 +1,7 @@
+- id: govulncheck
+  name: Execute `govulncheck` command
+  description: This hook executes a command using `govulncheck`.
+  entry: govulncheck
+  language: python
+  types: [python]
+  stages: [pre-commit, pre-merge-commit, manual]
