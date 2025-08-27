@@ -2,7 +2,6 @@ from __future__ import annotations
 
 import subprocess
 
-# def main(argv: Sequence[str] | None = None) -> int:
 def main() -> int:
     result = subprocess.run(['govulncheck', './...'], stdout=subprocess.PIPE, check=True)
 
