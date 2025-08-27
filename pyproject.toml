@@ -1,7 +1,0 @@
-[project]
-name = "govulncheck-precommit"
-version = "1.0.0"
-dependencies = []
-
-[project.scripts]
-govulncheck = "customhooks.govulncheck:main"
