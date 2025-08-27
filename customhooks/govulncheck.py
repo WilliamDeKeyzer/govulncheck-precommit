@@ -3,7 +3,6 @@ from __future__ import annotations
 import subprocess
 
 def main() -> int:
-    print("Invoking the subprocess...")
     result = subprocess.run(['govulncheck', './...'], stdout=subprocess.PIPE, check=True)
 
     data = result.stdout
